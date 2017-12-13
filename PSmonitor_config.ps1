@@ -1,4 +1,4 @@
-function New-CTXchartsconfig
+function New-PSmonitorConfig
 {
     $settings = New-Object psobject
     $no_tabs = [int](Read-host -Prompt "Number of Tabs")
@@ -54,13 +54,13 @@ function New-CTXchartsconfig
 
     }
 
-    Show-CTXchartsconfig $settings
+    Show-PSmonitorConfig $settings
 
     return $settings
 }
 
 
-function Show-CTXchartsconfig
+function Show-PSmonitorConfig
 {
     Param
     (

@@ -24,21 +24,21 @@ Module that allows creating XML config file.
 
 Implements two functions:
 
-*New-CTXchartsconfig
-*View-CTXchartsconfig
+*New-PSmonitorConfig
+*View-PSmonitorConfig
 
-##### New-CTXchartsconfig
+##### New-PSmonitorConfig
 
 Creates from user input new config.
 
-##### View-CTXchartsconfig
+##### View-PSmonitorConfig
 
 Displays new config.
 
 ##### Usage
 
 ```
-PS > $config = New-CTXchartsconfig
+PS > $config = New-PSmonitorConfig
 Number of Tabs: 2
 App Title: PSmonitor
 Tab 0

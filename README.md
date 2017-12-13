@@ -21,15 +21,35 @@ TODO:Give examples
 #### PSmonitor_config.ps1
 
 Module that allows creating XML config file.
+
 Implements two functions:
+
 *New-CTXchartsconfig
 *View-CTXchartsconfig
 
 ##### New-CTXchartsconfig
 
-
+Creates from user input new config.
 
 ##### View-CTXchartsconfig
+
+Displays new config.
+
+##### Usage
+
+```
+PS > $config = New-CTXchartsconfig
+Number of Tabs: 2
+App Title: PSmonitor
+Tab 0
+Tab Name: Services
+Number of Sources: 1
+Tab 0, Source: 0
+Source Name: Win7
+Path to XML file: <pathtofile>.xml
+...
+PS > $config | export-CliXML <nameOfTheConfig>.xml
+```
 
 ### Installing
 

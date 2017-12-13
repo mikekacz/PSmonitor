@@ -54,13 +54,13 @@ function New-CTXchartsconfig
 
     }
 
-    View-CTXchartsconfig $settings
+    Show-CTXchartsconfig $settings
 
     return $settings
 }
 
 
-function View-CTXchartsconfig
+function Show-CTXchartsconfig
 {
     Param
     (
@@ -71,7 +71,7 @@ function View-CTXchartsconfig
 
         foreach ($tb in $Config.tabs){
         $tb.tabname
-        $tb.sources |select SourceName, path, AX, AY, BX, BY, Type, chrt_xlabel, chrt_ylabel, maxValue  | ft | Out-Host
+        $tb.sources |Select-Object SourceName, path, AX, AY, BX, BY, Type, chrt_xlabel, chrt_ylabel, maxValue  | format-table | Out-Host
     }
 }
 

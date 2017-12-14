@@ -1,0 +1,158 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <I32 N="no_tabs">1</I32>
+      <S N="title">PSMonitor</S>
+      <Obj N="tabs" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <Obj RefId="2">
+            <TNRef RefId="0" />
+            <MS>
+              <S N="tabname">XenApp</S>
+              <Obj N="sources" RefId="3">
+                <TNRef RefId="1" />
+                <LST>
+                  <Obj RefId="4">
+                    <TNRef RefId="0" />
+                    <MS>
+                      <S N="SourceName">Servers - Heavy Load</S>
+                      <S N="path">\xml\CTX_monitor_1_v2.xml</S>
+                      <Sg N="AX">0</Sg>
+                      <Sg N="AY">0</Sg>
+                      <Sg N="BX">0.6</Sg>
+                      <Sg N="BY">0.2</Sg>
+                      <S N="Type">List</S>
+                    </MS>
+                  </Obj>
+                  <Obj RefId="5">
+                    <TNRef RefId="0" />
+                    <MS>
+                      <S N="SourceName">Servers - Capacity</S>
+                      <S N="path">\xml\CTX_monitor_2_v2.xml</S>
+                      <Sg N="AX">0.6</Sg>
+                      <Sg N="AY">0</Sg>
+                      <Sg N="BX">1</Sg>
+                      <Sg N="BY">0.2</Sg>
+                      <S N="Type">Chart</S>
+                      <S N="chrt_xlabel">Service</S>
+                      <S N="chrt_ylabel">Load</S>
+                      <Sg N="maxValue">1</Sg>
+                    </MS>
+                  </Obj>
+                  <Obj RefId="6">
+                    <TNRef RefId="0" />
+                    <MS>
+                      <S N="SourceName">Servers - Services</S>
+                      <S N="path">\xml\CTX_monitor_3_v2.xml</S>
+                      <Sg N="AX">0</Sg>
+                      <Sg N="AY">0.2</Sg>
+                      <Sg N="BX">0.6</Sg>
+                      <Sg N="BY">0.6</Sg>
+                      <S N="Type">List</S>
+                    </MS>
+                  </Obj>
+                  <Obj RefId="7">
+                    <TNRef RefId="0" />
+                    <MS>
+                      <S N="SourceName">Servers with 7011 error</S>
+                      <S N="path">\xml\CTX_monitor_7_v2.xml</S>
+                      <Sg N="AX">0</Sg>
+                      <Sg N="AY">0.6</Sg>
+                      <Sg N="BX">0.3</Sg>
+                      <Sg N="BY">1</Sg>
+                      <S N="Type">List</S>
+                    </MS>
+                  </Obj>
+                  <Obj RefId="13">
+                    <TNRef RefId="0" />
+                    <MS>
+                      <S N="SourceName">Possible Logon issues</S>
+                      <S N="path">\xml\CTX_monitor_8_v2.xml</S>
+                      <Sg N="AX">0.3</Sg>
+                      <Sg N="AY">0.6</Sg>
+                      <Sg N="BX">0.6</Sg>
+                      <Sg N="BY">1</Sg>
+                      <S N="Type">List</S>
+                    </MS>
+                  </Obj>				  
+                  <Obj RefId="8">
+                    <TNRef RefId="0" />
+                    <MS>
+                      <S N="SourceName">Servers - Max metrics</S>
+                      <S N="path">\xml\CTX_monitor_5_v2.xml</S>
+                      <Sg N="AX">0.8</Sg>
+                      <Sg N="AY">0.6</Sg>
+                      <Sg N="BX">1</Sg>
+                      <Sg N="BY">1</Sg>
+                      <S N="Type">Chart</S>
+                      <S N="chrt_xlabel">Metric</S>
+                      <S N="chrt_ylabel">MAX</S>
+                      <Sg N="maxValue">0</Sg>
+                    </MS>
+                  </Obj>
+                  <Obj RefId="10">
+                    <TNRef RefId="0" />
+                    <MS>
+                      <S N="SourceName">Servers - Heavy Load</S>
+                      <S N="path">\xml\CTX_monitor_6a_v2.xml</S>
+                      <Sg N="AX">0.6</Sg>
+                      <Sg N="AY">0.6</Sg>
+                      <Sg N="BX">0.8</Sg>
+                      <Sg N="BY">1</Sg>
+                      <S N="Type">Chart</S>
+                      <S N="chrt_xlabel">ServerName</S>
+                      <S N="chrt_ylabel">Load</S>
+                      <Sg N="maxValue">10000</Sg>
+                    </MS>
+                  </Obj>
+                   <Obj RefId="11">
+                    <TNRef RefId="0" />
+                    <MS>
+                      <S N="SourceName">Servers - Logonmode</S>
+                      <S N="path">\xml\CTX_monitor_6b_v2.xml</S>
+                      <Sg N="AX">0.6</Sg>
+                      <Sg N="AY">0.2</Sg>
+                      <Sg N="BX">0.8</Sg>
+                      <Sg N="BY">0.6</Sg>
+                      <S N="Type">Chart</S>
+                      <S N="chrt_xlabel">Name</S>
+                      <S N="chrt_ylabel">Count</S>
+                      <Sg N="maxValue">0</Sg>
+                    </MS>
+                  </Obj>
+                   <Obj RefId="12">
+                    <TNRef RefId="0" />
+                    <MS>
+                      <S N="SourceName">Sessions - state</S>
+                      <S N="path">\xml\CTX_monitor_6c_v2.xml</S>
+                      <Sg N="AX">0.8</Sg>
+                      <Sg N="AY">0.2</Sg>
+                      <Sg N="BX">1</Sg>
+                      <Sg N="BY">0.6</Sg>
+                      <S N="Type">Chart</S>
+                      <S N="chrt_xlabel">Name</S>
+                      <S N="chrt_ylabel">Count</S>
+                      <Sg N="maxValue">0</Sg>
+                    </MS>
+                  </Obj>
+                </LST>
+              </Obj>
+            </MS>
+          </Obj>
+          
+
+        </LST>
+      </Obj>
+     
+    </MS>
+  </Obj>
+</Objs>

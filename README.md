@@ -11,8 +11,16 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-TODO:Give examples
+* Microsoft Chart Controls for Microsoft .NET [System.Windows.Forms.DataVisualization] (required for genration of Charts), available at [MS Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=14422)
 ```
+
+### File list
+
+* PSmonitor.ps1 - script that loads PS GUI
+
+* PSmonitor_config.ps1 - module used for creation and displaying .xml config files
+
+* PSmonitor_comfig.xml - sample .xml config file
 
 ### Structure
 
@@ -24,18 +32,12 @@ Module that allows creating XML config file.
 
 Implements two functions:
 
-*New-PSmonitorConfig
-*View-PSmonitorConfig
-
-##### New-PSmonitorConfig
-
-Creates from user input new config.
-
-##### View-PSmonitorConfig
-
-Displays new config.
+* New-PSmonitorConfig - Creates from user input new config
+* View-PSmonitorConfig - Displays config
 
 ##### Usage
+
+Sample
 
 ```
 PS > $config = New-PSmonitorConfig
@@ -50,6 +52,8 @@ Path to XML file: <pathtofile>.xml
 ...
 PS > $config | export-CliXML <nameOfTheConfig>.xml
 ```
+
+
 
 ### Installing
 

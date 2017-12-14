@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-* Microsoft Chart Controls for Microsoft .NET [System.Windows.Forms.DataVisualization] (required for genration of Charts), available at [MS Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=14422)
+* Microsoft Chart Controls for Microsoft .NET [System.Windows.Forms.DataVisualization] (required for generation of Charts), available at [MS Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=14422)
 
 ### File list
 
@@ -54,8 +54,6 @@ Path to XML file: <pathtofile>.xml
 ...
 PS > $config | export-CliXML <nameOfTheConfig>.xml
 ```
-
-
 
 ### Installing
 

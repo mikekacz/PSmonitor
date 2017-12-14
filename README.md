@@ -10,9 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
 * Microsoft Chart Controls for Microsoft .NET [System.Windows.Forms.DataVisualization] (required for genration of Charts), available at [MS Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=14422)
-```
 
 ### File list
 
@@ -21,6 +19,10 @@ What things you need to install the software and how to install them
 * PSmonitor_config.ps1 - module used for creation and displaying .xml config files
 
 * PSmonitor_comfig.xml - sample .xml config file
+
+* Workers/*.ps1 - sample worker scripts that output data
+
+* XMLs/*.xml - sample .xml files containing data to display
 
 ### Structure
 
@@ -71,13 +73,13 @@ TODO: Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Michal Kaczmarek** - *Initial work* - [PurpleBooth](https://github.com/mikekacz)
+* **Michal Kaczmarek** - *Initial work* - [GITHUB](https://github.com/mikekacz)
 
 See also the list of [contributors](https://github.com/mikekacz/PSmonitor/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 

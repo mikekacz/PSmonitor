@@ -18,7 +18,7 @@ What things you need to install the software and how to install them
 
 * PSmonitor_config.ps1 - module used for creation and displaying .xml config files
 
-* PSmonitor_config.xml - sample .xml config file
+* PSmonitor_config.xml - sample .xml config file, should not be edited manually, unless small chages, like changing names of fileds or tweaking extend vaules.
 
 * Workers/*.ps1 - sample worker scripts that output data
 

@@ -96,6 +96,10 @@ Say what the step will be
 TODO:Give the example
 ```
 
+## Development
+
+TODO: switch from XML to JSON
+
 ## Deployment
 
 TODO: Add additional notes about how to deploy this on a live system

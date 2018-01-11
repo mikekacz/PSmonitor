@@ -1,3 +1,6 @@
+#TODO: function Validate-PSmonitoConfig
+#TODO: mandatory parameters
+
 function New-PSmonitorConfig
 {
     $settings = New-Object psobject
@@ -59,6 +62,57 @@ function New-PSmonitorConfig
     return $settings
 }
 
+function Export-PSmonitorConfig
+{
+    Param
+    (
+        [Parameter(Position=0)]
+        $config,
+        [Parameter(Position=1)]
+        [ValidateSet('XML','JSON')]
+        [string]$type = 'XML'
+    )
+
+    if ($type -eq 'XML')
+    {
+        $config | Export-Clixml -Path "PSmonitor_config.xml" -Confirm $true
+        Get-ChildItem .\PSmonitor_config.xml
+    }
+    elseif ($type -eq 'JSON')
+    {
+        $config | ConvertTo-Json -Depth 10 | Add-Content -Path ".\PSmonitor_config.json" -Confirm $true
+        Get-ChildItem .\PSmonitor_config.json
+    }
+}
+
+function Import-PSmonitorConfig
+{
+    Param
+    (
+        [Parameter(Position=0)]
+        $path,
+        [Parameter(Position=1)]
+        [ValidateSet('XML','JSON')]
+        [string]$type = 'XML'
+    )
+
+    $config = $null
+    
+    if (Test-Path $path){
+        if ($type -eq 'XML')
+        {
+            $config = import-Clixml -Path $path
+    
+        }
+        elseif ($type -eq 'JSON')
+        {
+            $config = Get-Content $path | Convertfrom-Json -Depth 10 
+        }
+    }
+
+    #validate-PSmonitorConfig
+    return $config
+}
 
 function Show-PSmonitorConfig
 {

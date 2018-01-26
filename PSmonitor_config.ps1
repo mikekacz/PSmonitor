@@ -40,7 +40,7 @@ function New-PSmonitorConfig
             $settings.tabs[$i].sources[$l] | Add-Member -Value $AY -Name AY -membertype noteproperty
             $settings.tabs[$i].sources[$l] | Add-Member -Value $BX -Name BX -membertype noteproperty
             $settings.tabs[$i].sources[$l] | Add-Member -Value $BY -Name BY -membertype noteproperty
-            $settings.tabs[$i].sources[$l] | Add-Member -Value $Type -Name Type -membertype noteproperty
+            $settings.tabs[$i].sources[$l] | Add-Member -Value $Type -Name Type -membertype noteproperty #TODO: validate user input, currently supported Chart, List,  to be added: Webpage
 
             if ($type -eq "Chart")
             {

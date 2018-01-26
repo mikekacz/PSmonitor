@@ -106,7 +106,7 @@ function Import-PSmonitorConfig
         }
         elseif ($type -eq 'JSON')
         {
-            $config = Get-Content $path | Convertfrom-Json -Depth 10 
+            $config = Get-Content $path | Convertfrom-Json #-Depth 10 
         }
     }
 
